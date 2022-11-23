@@ -6,10 +6,15 @@ public class Player {
     private String name;
     private String level;
 
+    private int position;
 
-    public Player( String name, String level) {
+
+    public Player(int record, int currentMoves, String name, String level, int position) {
+        this.record = record;
+        this.currentMoves = currentMoves;
         this.name = name;
         this.level = level;
+        this.setPosition(position);
     }
 
     public int getRecord() {
@@ -44,7 +49,11 @@ public class Player {
         this.level = level;
     }
 
-    /*
-    comment
-     */
-}//class
+    public int getPosition() {
+        return position;
+    }
+
+    public void setPosition(int position) {
+        this.position += position;
+    }
+}
