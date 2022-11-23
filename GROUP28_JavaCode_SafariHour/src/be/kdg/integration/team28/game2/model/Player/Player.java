@@ -43,4 +43,8 @@ public class Player {
     public void setLevel(String level) {
         this.level = level;
     }
+
+    /*
+    comment
+     */
 }//class
